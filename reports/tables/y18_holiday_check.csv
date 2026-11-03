@@ -1,0 +1,18 @@
+date,raw flag,verified official,match,reason
+2018-01-01,True,True,True,
+2018-02-15,True,True,True,
+2018-02-16,True,True,True,
+2018-02-17,True,True,True,
+2018-03-01,True,True,True,
+2018-05-01,True,False,False,Raw false flag: Labour Day is not on the verified list
+2018-05-05,False,True,False,Raw miss: Children's Day
+2018-05-07,False,True,False,Raw miss: substitute holiday for Children's Day
+2018-05-22,True,True,True,
+2018-06-06,True,True,True,
+2018-06-13,False,True,False,Raw miss: local election day
+2018-08-15,True,True,True,
+2018-09-23,True,True,True,
+2018-09-24,True,True,True,
+2018-09-25,True,True,True,
+2018-09-26,False,True,False,Raw miss: substitute holiday for Chuseok
+2018-10-03,True,True,True,
