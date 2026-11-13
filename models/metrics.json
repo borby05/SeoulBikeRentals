@@ -1,0 +1,30 @@
+{
+  "model": "Gradient boosting",
+  "train_period": "December 2017 to September 2018",
+  "test_period": "October and November 2018",
+  "test_rows": 1313,
+  "features": [
+    "hour",
+    "month",
+    "weekday",
+    "holiday_flag",
+    "temperature",
+    "humidity",
+    "wind_speed",
+    "rainfall",
+    "snowfall"
+  ],
+  "mae": 220.89906600146804,
+  "rmse": 291.81465839432684,
+  "r2": 0.7297028271030682,
+  "mean_error": -187.32634771917841,
+  "baseline_mae": {
+    "overall_mean": 452.1392361874288,
+    "hour_mean": 298.485186851158,
+    "hour_weekend_mean": 272.89932385698376
+  },
+  "rush_hour_mean_error": {
+    "08:00": -515.4466799170818,
+    "18:00": -479.05786266424303
+  }
+}

@@ -14,7 +14,7 @@ UNITS = {
     "rainfall": "mm",
     "snowfall": "cm",
 }                                   # feeds axis labels in the reports and the dashboard
-WEEK_INCREMENT = 1                  # increases the week index by 1 
+WEEK_INCREMENT = 1                  # increases the week index by 1
 DATE_FORMAT = "%d/%m/%Y"            # parsing the date column format
 WEEK_ANCHOR = pd.Timestamp("2017-12-01")            # start of the week
 DAYS_IN_WEEK = 7
@@ -68,7 +68,7 @@ def add_calendar_features(df: pd.DataFrame, date_col: str = "date") -> pd.DataFr
     df_copy["weekday"] = df_copy[date_col].dt.dayofweek
     df_copy["day_name"] = df_copy[date_col].dt.day_name()
     df_copy["is_weekend"] = df_copy["weekday"].isin(WEEKEND_DAYS)
-    df_copy["week_position"] = (df_copy["weekday"] - WEEK_START_DAY) % DAYS_IN_WEEK
+    df_copy["day_position"] = (df_copy["weekday"] - WEEK_START_DAY) % DAYS_IN_WEEK
 
     days_since_anchor = (df_copy[date_col] - WEEK_ANCHOR).dt.days
     df_copy["week_number"] = days_since_anchor // DAYS_IN_WEEK + WEEK_INCREMENT
