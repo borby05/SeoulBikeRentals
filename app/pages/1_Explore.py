@@ -6,7 +6,7 @@ import charts
 import analysis  # works because data.py adds the src folder to the path
 
 style.setup("Explore")
-style.banner("Explore", "Filter the rentals by year, month, day type and hour")
+style.banner("Explore", "Filter demand by year, month, day type and hour")
 
 DAY_TYPES = ["Weekday", "Weekend", "Holiday"]
 

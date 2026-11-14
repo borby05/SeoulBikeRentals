@@ -154,4 +154,4 @@ def predict_curve(values, chosen_hour, title):
         hovertemplate="Your hour, %{x}: %{y:,.0f} predicted<extra></extra>",
     ))
     fig.update_layout(showlegend=False)
-    return _finish(fig, title, "Predicted rentals per hour")
+    return _finish(fig, title, "Predicted demand, rentals per hour")

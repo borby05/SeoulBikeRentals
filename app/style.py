@@ -32,7 +32,7 @@ ICONS = {
     "Busiest day": "🏆",
     "Quietest day": "😴",
     "Model error (MAE)": "🎯",
-    "Predicted rentals": "✨",
+    "Predicted demand": "✨",
     "Typical miss": "📏",
 }
 

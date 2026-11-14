@@ -10,7 +10,7 @@ import data
 import charts
 
 style.setup("Predict")
-style.banner("Predict", "Estimate the rentals of one hour from the day and the weather")
+style.banner("Predict", "Estimate the demand of one hour from the day and the weather")
 
 WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]  # 0 to 6
 MONTHS = list(calendar.month_name)[1:]                                                      # January to December
@@ -80,8 +80,8 @@ value = float(curve[hour])
 
 with result:
     st.subheader("Estimate")
-    style.number_card("Predicted rentals", f"{value:,.0f}",
-                      f"{weekday_name}, {month_name}, {hour:02d}:00", colour=style.AMBER, dark=True)
+    style.number_card("Predicted demand", f"{value:,.0f}",
+                      f"{weekday_name}, {month_name}, {hour:02d}:00", colour=style.AMBER, hero=True)
     style.number_card("Typical miss", f"about {metrics['mae']:,.0f}",
                       "rentals per hour, measured on the test months", colour=style.CORAL)
     style.notice(
@@ -97,7 +97,7 @@ with result:
 
 # ---------- Curve ----------
 with st.container(border=True):
-    charts.show(charts.predict_curve(curve, hour, "Predicted rentals across the day, weather held at your inputs"))
+    charts.show(charts.predict_curve(curve, hour, "Predicted demand across the day, weather held at your inputs"))
 
 # ---------- Model notes ----------
 with st.expander("Model notes"):
