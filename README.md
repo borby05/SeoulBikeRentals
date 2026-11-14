@@ -95,6 +95,7 @@ SeoulBikeRentals/
     gradient_boosting.joblib   Trained model
     metrics.json               Scores, features and rush-hour errors
   notebooks/           Cleaning, 2017 and 2018 analysis, audit and modelling notebooks
+  reports/             Word reports, figures and tables
   src/                 clean.py, analysis.py and the modelling code
   .streamlit/          Theme and navigation settings
   requirements.txt     Pinned library versions
