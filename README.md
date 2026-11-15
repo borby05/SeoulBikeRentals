@@ -2,7 +2,7 @@
 
 A year of hourly bike rental records, analysed month by month, compared side by side and used to estimate the demand of one hour. Demand means completed rentals. The project holds a data cleaning pipeline, a 2017 and a 2018 analysis, a prediction model and a Streamlit app.
 
-**Live app:** https://YOUR-APP-NAME.streamlit.app
+**Live app:** https://seoulbikerentals.streamlit.app
 
 ## What the project answers
 
@@ -95,6 +95,7 @@ SeoulBikeRentals/
     gradient_boosting.joblib   Trained model
     metrics.json               Scores, features and rush-hour errors
   notebooks/           Cleaning, 2017 and 2018 analysis, audit and modelling notebooks
+  reports/             Word reports, figures and tables
   src/                 clean.py, analysis.py and the modelling code
   .streamlit/          Theme and navigation settings
   requirements.txt     Pinned library versions
